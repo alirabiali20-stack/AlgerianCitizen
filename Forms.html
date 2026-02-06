@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الاستمارات | Algdz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-wrapper">
+        <!-- Header -->
+        <div class="top-bar">
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h2>دليل الاستمارات 🇩🇿</h2>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+
+        <!-- Sidebar Navigation -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h3>الفئات</h3>
+                <button class="close-sidebar" id="closeSidebar">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <ul class="categories-list" id="categoriesList"></ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-container">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-box" 
+                    placeholder="ابحث عن نموذج..."
+                >
+                <button class="filter-btn" id="filterBtn">
+                    <i class="fas fa-filter"></i>
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="stats-container">
+                <div class="stat-card">
+                    <span class="stat-number" id="totalForms">0</span>
+                    <span class="stat-label">إجمالي النماذج</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="favoriteForms">0</span>
+                    <span class="stat-label">المفضلة</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number" id="categoriesCount">0</span>
+                    <span class="stat-label">الفئات</span>
+                </div>
+            </div>
+
+            <!-- Forms Grid -->
+            <div class="forms-container" id="formsContainer"></div>
+
+            <!-- No Results Message -->
+            <div class="no-results" id="noResults">
+                <i class="fas fa-search"></i>
+                <p>لا توجد نتائج مطابقة لبحثك</p>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button class="fab" id="fabBtn" title="الأعلى">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>© 2026 جميع الحقوق محفوظة | <strong>Algdz</strong></p>
+            <p>🌹 لا تنسونا من صالح دعائكم 🌹</p>
+        </div>
+    </footer>
+
+    <script src="js/data.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
